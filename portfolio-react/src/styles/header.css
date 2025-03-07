@@ -1,0 +1,142 @@
+
+
+
+
+/* portfolio-react/src/styles/header.css */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+.header-background {
+    width: 100vw; 
+    height: auto; 
+    min-height: 300px; 
+    background-image: url("../assets/headertornpage.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    color: #642f20;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+
+
+  .header-text {
+    font-family: 'DM Serif Text', serif;
+    font-size: 4vw;
+    font-weight: normal;
+    color: #8f442e;
+    margin: 0;
+    padding-bottom: 0;
+   
+  }
+  
+  .nav-links {
+    display: flex;
+}
+
+  .nav-link {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8em;
+    font-weight: bold;
+    position: relative;  
+    text-decoration: none;
+    color: #642f20;
+    margin-left: 2em;
+    font-size: 1.8em;
+    margin-right: 2em;
+    display: inline-block;
+    padding: 0 10px;
+
+  }
+
+.nav-link::after {
+    content: ''; 
+    position: absolute; 
+    width: calc(100% + 40px);
+    height: calc(100% + 40px); 
+    background: url('public/images/linkCircle.png') no-repeat center center; 
+    background-size: contain;
+    left: -16px; 
+    bottom: -16px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    cursor: pointer;
+}
+
+
+.nav-link:hover::after, .nav-link:focus::after {
+    opacity: 1; 
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      margin-right: 3em;
+    }
+  
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background-color: #642f20;
+        z-index: 1;
+        right: 0;
+        top: 11%;      
+    }
+    .nav-links.active {
+        display: block;
+    }
+    .nav-link {
+        
+        border-bottom: 1px solid #e6e9e9;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 40px); 
+        height: calc(100% + 40px); 
+        background: url('/Images/linkCircle.png') no-repeat center center;
+        background-size: contain;
+        left: -20px; 
+        bottom: -20px; 
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .nav-link:hover::after, .nav-link:focus::after {
+        opacity: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+
