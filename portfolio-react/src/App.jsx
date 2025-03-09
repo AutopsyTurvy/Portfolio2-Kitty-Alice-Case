@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/home";
 import AboutMe from "./pages/aboutme";
 import Header from "./components/header";
+import ProjectsLastYear from "./components/projectslastyear";
 import "./App.css";
 import "./styles/landingpage.css"; 
 
@@ -67,26 +68,23 @@ function App() {
           </div>
         </div>
 
-    
-        <div className="h2-container">
-          <h3 className="Projects-so-far-header">Work from last year:</h3>
+
+
+
+
+
+
+
+
+        <div class="line-container">
+          <div class="line"></div>
         </div>
 
-        <div className="cards-container">
-        
-          <div className="sticky-note-image">
-            <div className="card">
-              <a href="https://enchanting-kringle-525ad3.netlify.app" className="card-link">
-                <img className="card-image" src="/images/theLoreOfPour.jpeg" alt="Screenshot of The Lore of Pour Blog" />
-              </a>
-              <p className="card-title">The Lore of Pour</p>
-              <div className="card-links">
-                <a href="https://enchanting-kringle-525ad3.netlify.app" className="card-link">Netlify</a>
-                <a href="https://github.com/AutopsyTurvy/The-Lore-of-Pour--Project-Exam-1.git" className="card-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+  
+      <ProjectsLastYear />
+    
 
     
         <img className="email-me" src="/images/emailme.png" alt="Email me, and a little arrow pointing below." />
@@ -97,7 +95,7 @@ function App() {
             Your browser does not support the video tag.
           </video>
          
-          <Link className="video-button" to="/about">Email Me!</Link>
+          <Link className="email-me-button" to="/about">Email Me!</Link>
         </div>
 
         

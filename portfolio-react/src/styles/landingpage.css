@@ -20,10 +20,11 @@
 }
 
 .Projects-so-far-header {
-    color: #e6e9e9;
-    font-family: "Jost", sans-serif;
-    font-weight: 300;
+    color: #642f20;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .email-me {
@@ -49,7 +50,7 @@
     margin-top: -120px;
 }
 
-.video-button {
+.email-me-button {
 
     position: absolute;
     top: 50%;
@@ -66,17 +67,17 @@
     text-decoration: none;
 }
 
-.video-button:hover {
-    background: url('/Images/linkCircle.png') no-repeat center center;
+.email-me-button:hover {
+    background: url('/images/linkcircle.png') no-repeat center center;
     background-size: cover;
     
 }
 
-.video-button::after {
+.email-me-button::after {
     content: '';
     width: calc(100% + 60px); 
     height: calc(100% + 60px); 
-    background: url('/Images/linkCircle.png') no-repeat center center;
+    background: url('/images/linkcircle.png') no-repeat center center;
     background-size: cover;
     left: -30px; 
     bottom: -30px; 
@@ -226,19 +227,19 @@
 
 
 .sticky-note-image {
-    background-image: url('/images/stickyNoteTape.png');
+    background-image: url('/images/stickynotedouble2.png');
 }
 
 
 
-.sticky-note-image-2 {
-    background-image: url('/images/stickyNoteDouble.png');
+.sticky-note-image-2 {   
+    background-image: url('/images/stickynotetaped.png');
 }
 
 
 
 .sticky-note-image-3 {
-    background-image: url('/images/stickyNotePaperclip.png');
+    background-image: url('/images/stickynoteclipped.png');
 }
 
 
@@ -272,7 +273,7 @@
 .card-image {
     max-width: 100%;
     max-height: auto;
-    border: 2px solid #e6e9e9;
+    border: 2px solid #642f20;
     border-radius: 4px;
     position: relative;
 }
@@ -280,13 +281,40 @@
 
 
 .card-title {
-    color: #e6e9e9;
-    font-family: "Coming Soon", cursive;
+    color: #642f20;
+    font-family: 'DM Serif Text', serif;
     display: block;
     font-size: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
+.line-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 50%;  
+    height: 3px;
+    background-color: #642f20;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -304,9 +332,10 @@
     display: inline-block;
     font-size: 1.2em;
     margin-top: 0;
-    color: #e6e9e9;
+    color: #642f20;
     text-decoration: none;
-    font-family: "Jost", sans-serif;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
@@ -315,7 +344,7 @@
 
 
 .card-link:hover {
-    background: url('/Images/linkCircle.png') no-repeat center center;
+    background: url('/images/linkcircle2.png') no-repeat center center;
     background-size: contain;
     transition: 0.3s ease-in-out;
 }
@@ -323,84 +352,26 @@
 
 
 .details-button, .details-button-2, .details-button-3 {
-    color: #e6e9e9;
     font-size: 1.2em;
-    font-family: "Jost", sans-serif;
+    color: #642f20;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
     text-decoration: none;
     border: none;
     padding: 10px;
     cursor: pointer;
-    background-color: #292c2e;
+    background-color: #e6d4af;
   }
 
 
 
   .details-button:hover, .details-button-2:hover, .details-button-3:hover {
-    background: url('/Images/linkCircle.png') no-repeat center center;
+    background: url('/images/linkcircle2.png') no-repeat center center;
     background-size: contain;
+    background-color: none;
   }
 
 
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-
-
-.modal-title {
-    font-family: "Coming Soon", cursive;
-    color: #e6e9e9;
-    font-size: 2em;
-    text-align: center;
-}
-
-
-
-.modal-paragraph {
-    text-align: center;
-    font-family: "Jost", sans-serif;
-    color: #e6e9e9;
-    font-size: 1em;
-}
-
-
-
-.modal-content {
-    background-color: #292c2e;
-    margin: 15% auto;
-    padding: 3em;
-    border: 1px solid #e6e9e9;
-    width: 80%;
-}
-
-.close-button {
-    color: #e6e9e9;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    border: 1px solid #e6e9e9;
-    padding: 1px 6px;
-}
-
-
-.close-button:hover,
-.close-button:focus {
-
-    color:#292c2e;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #e6e9e9;
-
-}
 
 
 
@@ -444,7 +415,7 @@
 
     max-width: 70%;
     font-family: "Jost", sans-serif;
-    color: #e6e9e9;
+    color: #642f20;
     align-self: center;
 }
 
@@ -452,7 +423,7 @@
 
 .github-about-link {
     text-decoration: none;
-    color: #e6e9e9; 
+    color: #642f20;
     font-family: "Jost", sans-serif; 
     position: relative;
     display: inline-block;
