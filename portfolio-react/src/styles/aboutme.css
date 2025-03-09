@@ -1,0 +1,105 @@
+
+
+
+
+
+/* About Me --------------------------------------------------------------------------*/
+
+
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.hello {
+    max-width: 8em;
+    padding-top: 10%;
+    padding-bottom: 0;   
+}
+
+
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.about-paragraph {
+
+    max-width: 70%;
+    font-family: "Jost", sans-serif;
+    color: #642f20;
+    align-self: center;
+}
+
+
+.github-about-link {
+    text-decoration: none;
+    color: #642f20;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px; 
+    font-size: x-large;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+.github-about-link:hover {
+    background-image: url("../images/linkcircle2.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 20;
+    color: #a15b3c;
+}
+
+
+
+
+
+.github-about-link:hover::after {
+    opacity: 1;
+}
+
+.signed {
+    max-width: 7em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.me {
+    padding: 2em;
+    margin-right: 5em;
+    max-height: 40vw;
+    max-width: auto;
+    align-self: center;
+
+}
+
+@media (max-width: 1200px) { 
+    .about-container {
+        flex-direction: column;
+    }
+
+    .me {
+    
+        max-width: 40%;
+        display: block;
+        margin: 0 auto;
+    
+    }
+}

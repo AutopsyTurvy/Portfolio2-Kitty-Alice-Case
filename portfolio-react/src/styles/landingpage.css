@@ -38,38 +38,43 @@
 .video-container {
     overflow: hidden;
     position: relative;
-    width: 100%;
-
+    width: 100vw;   
+    height: 100vh; 
 }
 
 .video {
-   
+    width: 180vw;
     height: 100vh;
-    width: 100%;
-    padding: 0;
-    margin-top: -120px;
+    object-fit: cover;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-40vw, -1vh);
 }
 
 .email-me-button {
 
     position: absolute;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
     top: 50%;
-    left: 20%;
+    left: 50%;
     transform: translateY(-50%);
     z-index: 10;
     padding: 10px 20px;
     color: #e6e9e9;
-    background-color: #292c2e;
-    border: none;
+    background-color: #642f20;
+    border-radius: 10px;
+    border:4px solid #e6e9e9 ;
     cursor: pointer;
     font-size: 1.5em;
-    font-family: "Jost", sans-serif;
     text-decoration: none;
 }
 
 .email-me-button:hover {
     background: url('/images/linkcircle.png') no-repeat center center;
     background-size: cover;
+    background-color: #b05c35;
     
 }
 
@@ -233,7 +238,7 @@
 
 
 .sticky-note-image-2 {   
-    background-image: url('/images/stickynotetaped.png');
+    background-image: url('/images/pinnednotesticky.png');
 }
 
 
@@ -347,6 +352,7 @@
     background: url('/images/linkcircle2.png') no-repeat center center;
     background-size: contain;
     transition: 0.3s ease-in-out;
+    color: #a15b3c;
 }
 
 
@@ -360,7 +366,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    background-color: #e6d4af;
+    background-color: #e4c999;
   }
 
 
@@ -369,120 +375,10 @@
     background: url('/images/linkcircle2.png') no-repeat center center;
     background-size: contain;
     background-color: none;
+    color: #a15b3c;
   }
 
 
 
 
 
-
-
-
-
-
-
-/* About Me --------------------------------------------------------------------------*/
-
-
-
-.about-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-
-
-.hello {
-    max-width: 8em;
-    padding-top: 10%;
-    padding-bottom: 0;   
-}
-
-
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.about-paragraph {
-
-    max-width: 70%;
-    font-family: "Jost", sans-serif;
-    color: #642f20;
-    align-self: center;
-}
-
-
-
-.github-about-link {
-    text-decoration: none;
-    color: #642f20;
-    font-family: "Jost", sans-serif; 
-    position: relative;
-    display: inline-block;
-    padding: 10px; 
-}
-
-
-
-.github-about-link::after {
-    content: ''; 
-    position: absolute; 
-    width: calc(100% + 40px); 
-    height: calc(100% + 40px);
-    background: url('/Images/linkCircle.png') no-repeat center center; 
-    background-size: contain;
-    left: -20px; 
-    bottom: -20px; 
-    opacity: 0; 
-    transition: opacity 0.3s; 
-}
-
-
-
-.github-about-link:hover::after, .github-about-link:focus::after {
-    opacity: 1;
-}
-
-
-
-.signed {
-    max-width: 7em;
-    display: block;
-    margin: 0 auto;
-}
-
-
-
-.me {
-    padding: 2em;
-    margin-right: 5em;
-    max-height: 40vw;
-    max-width: auto;
-    align-self: center;
-
-}
-
-
-
-
-@media (max-width: 1200px) { 
-    .about-container {
-        flex-direction: column;
-    }
-
-    .me {
-    
-        max-width: 40%;
-        display: block;
-        margin: 0 auto;
-    
-    }
-}
