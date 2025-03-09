@@ -19,7 +19,7 @@
 }
 
 .modal-content {
-    background: #fff;
+    background: #e4c999;
     padding: 20px;
     width: 90%;
     max-width: 600px;
@@ -31,6 +31,7 @@
 }
 
 .modal-title {
+    font-family: 'DM Serif Text', serif;
     font-size: 1.8rem;
     color: #642f20;
     margin-bottom: 10px;
@@ -38,8 +39,9 @@
 
 .modal-paragraph {
     font-size: 1rem;
-    color: #333;
+    color: #642f20;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 .close-button {

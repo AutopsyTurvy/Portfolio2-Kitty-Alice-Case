@@ -95,14 +95,28 @@ export default function HomeContent() {
         show={activeModal === "auctionHouse"}
         onClose={closeModal}
         title="Semester Project 2 - Auction House"
-        description="This project involved creating an auction house web application using JavaScript and a REST API..."
+        description="This project involved creating an auction house web application using JavaScript and the Noroff REST API-
+        It was at that point the most advanced we had gone with JavaScript after our JavaScript 2 module- It also had the most pages and intricate 
+        workings- The design was another exploration of more lighthearted and joyful themes- 
+        lots of round shapes and colours chosen both for inclusivity and mood.
+        The purpose of our work was to create a functioning auction site with registration, login- the user would be given credits upon registration
+        that they could use to bid on items, and then when the timer on the auction ran out, if the user did not win, those credits would be refunded.
+        It should also show the users profile information, bidding history, time left until the end of the auction and make a bid that will be visible on the bid history,
+        Credits will be deducted when a bid is made. 
+        For more Information, feel free to check out the github link to the actual repo, or try the site via netlify. 
+        
+        "
       />
 
       <Modal
         show={activeModal === "bidNest"}
         onClose={closeModal}
         title="JavaScript Frameworks - E-commerce Store (BidNest)"
-        description="An online marketplace built using React and a headless CMS, allowing users to bid on various products."
+        description="An online marketplace built using React, allowing users to bid on various products- the last project before our
+        Christmas break. This was probably one of the clanest designs I have made- It being created with simplicity in mind.
+        The main function of the site was to be able to 'buy' products, and all of those would be added to the cart page, visible with a 
+        running total, and the ability to 'buy' the products at the end.
+        For more Information, feel free to check out the github link to the actual repo, or try the site via netlify. "
       />
 
       <Modal
