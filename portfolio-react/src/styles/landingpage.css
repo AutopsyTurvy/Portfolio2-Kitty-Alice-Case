@@ -12,16 +12,12 @@
 
 
 
-
-
 .h2-container {
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 100%; 
 }
-
-
 
 .Projects-so-far-header {
     color: #e6e9e9;
@@ -30,9 +26,6 @@
     text-align: center;
 }
 
-
-
-
 .email-me {
 
     height: 6em;
@@ -40,8 +33,6 @@
     margin: 0 auto;
   
 }
-
-
 
 .video-container {
     overflow: hidden;
@@ -57,8 +48,6 @@
     padding: 0;
     margin-top: -120px;
 }
-
-
 
 .video-button {
 
@@ -76,7 +65,6 @@
     font-family: "Jost", sans-serif;
     text-decoration: none;
 }
-
 
 .video-button:hover {
     background: url('/Images/linkCircle.png') no-repeat center center;
@@ -238,19 +226,19 @@
 
 
 .sticky-note-image {
-    background-image: url('/Images/stickyNoteTape.png');
+    background-image: url('/images/stickyNoteTape.png');
 }
 
 
 
 .sticky-note-image-2 {
-    background-image: url('/Images/stickyNoteDouble.png');
+    background-image: url('/images/stickyNoteDouble.png');
 }
 
 
 
 .sticky-note-image-3 {
-    background-image: url('/Images/stickyNotePaperclip.png');
+    background-image: url('/images/stickyNotePaperclip.png');
 }
 
 

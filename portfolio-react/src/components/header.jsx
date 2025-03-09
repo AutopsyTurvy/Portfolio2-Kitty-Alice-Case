@@ -1,13 +1,13 @@
 
 
 
-// src/components/Header.jsx
+// src/components/header.jsx
 
 
 
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/header.css";
-import headerImage from "../assets/headertornpage2.png"; 
 
 function Header() {
   return (
@@ -15,10 +15,10 @@ function Header() {
       <header className="header-container">
         <h1 className="header-text">Portfolio: Kitty Alice</h1>
 
-        <nav className="nav-links">
-          <a className="nav-link" href="index.html">Home</a>
-          <a className="nav-link" href="pages/aboutMe.html">About</a>
-          <a href="https://github.com/AutopsyTurvy" className="nav-link">Github Profile</a>
+        <nav className="header-nav-links">
+        <a className="header-nav-link" as={Link} to="/">Home</a>
+        <a className="header-nav-link" as={Link} to="/about">About</a>
+          <a href="https://github.com/AutopsyTurvy" className="header-nav-link">Github Profile</a>
         </nav>
 
         <button className="hamburger" aria-label="To open the navigation menu!">
@@ -32,4 +32,3 @@ function Header() {
 }
 
 export default Header;
-
