@@ -25,22 +25,20 @@ export default function AboutMe() {
           "Victorian" by friends and teachers, but now I stand before you—a thoroughly chaotic, but passionate Front-End
           Development Student!
           <br />
-          So far, I've had the privilege of diving into HTML, CSS, JavaScript—but I wait with bated breath to also delve into
-          other frameworks that can expand my toolkit and allow me to bring my creative visions to life. I expect my
-          educational journey and future career to be one of constant growth and endless curiosity.
+          March marks the end of our Journet with Noroff school, and what a journey is has been! 
+          We've gone into Bootstrap, Tailwind, React, CSS Modules and a wonderful variety of frameworks- Usually we had the choice so that 
+          we could form a preference, and I fall happily on the side of CSS Modules, but with all of the options, 
+          that may easily change depending on the project.
+          
           <br />
-          Despite what feels like a short first year, we have already completed three projects, and I am looking forward to
-          the next twelve months of increasing skill and knowledge. I enjoy trying to incorporate illustration into my work,
-          and I intend to develop this as my education progresses—hopefully with more and more finesse! I aim to further refine
-          my skills and contribute to projects that make the digital world a more inclusive, beautiful, and engaging place.
+
+          Where my journey leads now, who can say? I will be looking into freelance coding opportunities for further experience,
+          and expanding on my own style!
+          I aim to further refine my skills and contribute to projects that make the digital world a more inclusive, beautiful, and engaging place.
         </p>
 
         <p className="about-paragraph">
-          <br />
-          I still keep my artwork close by, of course. If I get a break from schoolwork, I still dust off the pencils or
-          sewing machine. I can't be sitting at a desk all day without quilts, blankets, cozy artwork, or comfortable dresses,
-          can I? I also recently started dipping into animation!
-          <br />
+         
           <br />
           <strong>Let's Connect!</strong>
           <br />
